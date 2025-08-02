@@ -1,0 +1,47 @@
+<footer class="footer">
+	<div class="footer-container">
+		<div class="footer-top">
+			<div class="footer-brand">
+				<div class="footer-logo">
+					<img src="/logo.png" alt="FBI logo" width="48" height="48" class="logo-img" />
+					<span class="brand-name">Fox Box Incorporated</span>
+				</div>
+				<p class="footer-description">Providing premium protection and moderation for Discord communities since 2025.</p>
+			</div>
+
+			<div class="footer-links">
+				<div>
+					<h4 class="footer-heading">Legal</h4>
+					<ul class="footer-list">
+						<li><a href="/terms" class="footer-link">Terms of Service</a></li>
+						<li><a href="/privacy" class="footer-link">Privacy Policy</a></li>
+						<li><a href="/refunds" class="footer-link">Refund Policy</a></li>
+					</ul>
+				</div>
+
+				<div>
+					<h4 class="footer-heading">Contact</h4>
+					<ul class="footer-list">
+						<li><a href="/support" class="footer-link">Support</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<p class="footer-description">Fox Box is an independent Discord application and is not affiliated with any other business or product bearing the name "Fox Box."</p>
+		<br />
+
+		<div class="footer-bottom">
+			<p class="footer-copyright">© 2025 Fox Box Inc. All rights reserved.</p>
+			<div class="footer-made">
+				<span>Made with
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+						fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+						stroke-linejoin="round" class="heart-icon">
+						<path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+					</svg>
+				</span>
+			</div>
+		</div>
+	</div>
+</footer>

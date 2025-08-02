@@ -1,0 +1,55 @@
+<style>
+	.title {
+		margin-bottom: 1.5rem;
+		padding-top: 6rem;
+		font-size: 2.5rem;
+		font-weight: bold;
+		color: #fff;
+	}
+	
+	.section {
+		padding: 1.5rem;
+	}
+
+	.background {
+		background: rgba(255, 255, 255, 0.05);
+		border-radius: 0.5rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.section-title {
+		margin-bottom: 1rem;
+		font-size: 1.5rem;
+		font-weight: bold;
+		color: var(--color-primary);
+	}
+
+	.section-desc {
+		color: var(--color-gray-300);
+		margin-bottom: 0.5rem;
+	}
+
+	.section-list {
+		margin-bottom: 1rem;
+		margin-left: 1rem;
+		color: var(--color-gray-300);
+	}
+
+	.section-list li {
+		margin-bottom: 0.5rem;
+		margin-left: 1.5rem;
+		list-style-type: disc;
+		padding-left: 1.5rem;
+	}
+
+	.row {
+		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+		padding: 1rem;
+	}
+
+	.table {
+		width: 100%;
+		border-collapse: collapse;
+		margin-bottom: 1rem;
+	}
+</style>
