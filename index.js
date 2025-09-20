@@ -159,7 +159,7 @@ function NormalizePath(reqPath) {
 	url = url.replace(/\/+$/, ''); // remove trailing slash
 	if (url.endsWith('.html')) url = url.slice(0, -5); // remove .html extension
 	// remove path manipulation
-	url = url.replace(/(\.\.|%2E%2E|%2f|%5C|%2F|%5C)/g, ''); // remove ../ and %2E%2E
+	url = url.replace(/(\.\.|%2E%2E|%2f|%5C)/g, ''); // remove ../ and %2E%2E
 	return url;
 }
 
