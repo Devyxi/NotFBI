@@ -37,7 +37,7 @@ app.use( express.raw({ limit: '100mb' }) );
 app.use((req, res, next) => {
 	res.header('Access-Control-Allow-Origin', '*');
 	res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, key');
-	res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+	res.header('Access-Control-Allow-Methods', 'GET, OPTIONS');
 
 	// Caching stuff lol
 	res.setHeader('Cache-Control', 'max-age=31536000'); // 30 days for assets
