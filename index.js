@@ -41,7 +41,7 @@ app.use((req, res, next) => {
 
 	// Caching stuff lol
 	res.setHeader('Cache-Control', 'max-age=31536000'); // 30 days for assets
-	res.setHeader('Expires', new Date(Date.now() + 1000 * 60 * 60).toUTCString()); // 1 hour for html
+	res.setHeader('Expires', new Date(Date.now() + 1000 * 60 * 60 * 24 * 30).toUTCString()); // 30 days
 
 	if (req.method === 'OPTIONS') {
 		return res.sendStatus(200);
