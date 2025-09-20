@@ -118,40 +118,6 @@ function SmartRound(input = 0) {
 	return `${value}${symbol}`;
 }
 
-let result;
-let lastRun = 0;
-async function GetStats() {
-	if (lastRun > Date.now() - 1000 * 60 * 60) return result;
-	lastRun = Date.now();
-
-	const response = await fetch('https://api.notfbi.dev/stats', {
-		method: 'GET',
-		headers: {
-			'Content-Type': 'application/json',
-		}
-	});
-
-	if (!response.ok) {
-		console.error(`Error fetching stats: ${response.status} ${response.statusText}`);
-		return null;
-	}
-
-	const data = await response.json(); // { guilds, messages, users, updatedAt }
-	if (!data) {
-		console.error('Error parsing stats');
-		return null;
-	}
-
-	result = {
-		guilds: SmartRound(data.guilds),
-		messages: SmartRound(data.messages),
-		users: SmartRound(data.users),
-		snapshots: SmartRound(data.snapshots),
-		updatedAt: data.updatedAt,
-	}
-	return result;
-}
-
 const templates = new Map(); // name -> data
 const templateFiles = fs.readdirSync(`${__dirname}/templates`);
 for (const file of templateFiles) {
@@ -224,12 +190,6 @@ app.get(`*`, async (req, res) => {
 		res.status(500).send('Internal Server Error');
 		console.error(`Could not find page for ${reqPath}`);
 		return;
-	}
-
-	// another round of templates lol
-	const stats = await GetStats(); // { guilds, messages, users, updatedAt }
-	for (const [name, value] of Object.entries(stats)) {
-		page = page.replace(`{{${name}}}`, value);
 	}
 
 	res.status(200).send(page);
