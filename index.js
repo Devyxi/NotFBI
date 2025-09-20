@@ -185,9 +185,9 @@ for (const assetPath of assets) {
 app.get(`*`, async (req, res) => {
 
 	const reqPath = NormalizePath(req.path);
-	let page = pages.get(reqPath) ?? pages.get('/404');
+	const page = pages.get(reqPath);
 	if (!page) {
-		res.status(500).send('Internal Server Error');
+		res.status(404).send( pages.get('/404') ?? '404 Not Found' );
 		console.error(`Could not find page for ${reqPath}`);
 		return;
 	}
