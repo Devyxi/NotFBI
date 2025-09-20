@@ -1,7 +1,7 @@
 <nav class="navbar">
 	<a href="/" class="navbar-brand">
 		<img src="/logo.png" alt="FBI logo" width="28" height="28" class="logo-img" />
-		<span class="full-text">Fox Box Incorporated</span>
+		<span class="full-text">Fox Box Insurance</span>
 		<span class="short-text">FBI</span>
 	</a>
 
@@ -13,4 +13,4 @@
 		</svg>
 		Invite Bot
 	</a>
-</nav> 
+</nav>

@@ -4,7 +4,7 @@
 			<div class="footer-brand">
 				<div class="footer-logo">
 					<img src="/logo.png" alt="FBI logo" width="48" height="48" class="logo-img" />
-					<span class="brand-name">Fox Box Incorporated</span>
+					<span class="brand-name">Fox Box Insurance</span>
 				</div>
 				<p class="footer-description">Providing premium protection and moderation for Discord communities since 2025.</p>
 			</div>
@@ -32,7 +32,7 @@
 		<br />
 
 		<div class="footer-bottom">
-			<p class="footer-copyright">© 2025 Fox Box Inc. All rights reserved.</p>
+			<p class="footer-copyright">© 2025 FoxTech Industries. All rights reserved.</p>
 			<div class="footer-made">
 				<span>Made with
 					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
