@@ -1,10 +1,3 @@
-// must be run with `node --env-file .env index.js`
-if (!process.env.API_KEY) {
-	console.error('Could not find process.env.API_KEY in .env');
-	console.error('Please run the server with `node --env-file .env index.js`');
-	process.exit(1);
-}
-
 const fs = require('fs');
 const express = require('express');
 const ReadFolder = require('./ReadFolder.js');
@@ -135,7 +128,6 @@ async function GetStats() {
 		method: 'GET',
 		headers: {
 			'Content-Type': 'application/json',
-			'key': process.env.API_KEY
 		}
 	});
 
