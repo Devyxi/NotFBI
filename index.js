@@ -107,17 +107,6 @@ app.get('/support', (req, res) => {
 	res.redirect('https://discord.gg/q7bUuVq4vB');
 });
 
-
-const POWERS = [ 'K', 'M', 'B', 'T', 'Qa', 'Qi', 'Sx', 'Sp', 'Oc', 'No' ];
-function SmartRound(input = 0) {
-	input = Math.abs(input); // remove decimal part
-	if (input < 1000) return input;
-	const power = ~~(Math.log10(input) / 3);
-	const symbol = POWERS[power - 1];
-	const value = Math.round(input / Math.pow(1000, power));
-	return `${value}${symbol}`;
-}
-
 const templates = new Map(); // name -> data
 const templateFiles = fs.readdirSync(`${__dirname}/templates`);
 for (const file of templateFiles) {
