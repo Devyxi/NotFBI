@@ -62,7 +62,7 @@ function GetTimestamp() {
 
 function ResolveIP(input) {
 	const [ IPv6, IPv4 ] = input.split(',');
-	return IPv6 ?? IPv4 ?? null;
+	return IPv6 ?? IPv4 ?? '127.0.0.1';
 }
 
 const blocked_terms = [ 'wp', '.env', '.git', 'config', 'eval' ];
