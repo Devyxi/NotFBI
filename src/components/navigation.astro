@@ -1,11 +1,15 @@
-<nav class="navbar">
+<nav>
 	<a href="/" class="navbar-brand">
-		<img src="/logo.png" alt="FBI logo" width="28" height="28" class="logo-img" />
-		<span class="full-text">Fox Box Insurance</span>
-		<span class="short-text">FBI</span>
+		<img src="/logo.png" alt="FBI logo" width="48" height="48" class="logo-img" />
 	</a>
 
-	<a href="/invite" class="invite-btn">
+    <div class="nav-links">
+        <a href="/about">About</a>
+	    <a href="/history">History</a>
+	    <a href="/roadmap">Roadmap</a>
+    </div>
+
+    <a href="/invite" class="invite">
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="16" height="16" fill="currentColor"
 			class="mr-1">
 			<path
@@ -14,3 +18,78 @@
 		Invite Bot
 	</a>
 </nav>
+
+<style>
+
+	nav {
+		font-size: 1.3rem;
+		display: flex;
+		gap: 2rem;
+		align-items: center;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 99%;
+		padding: 1rem;
+		background-color: rgba(30, 30, 30, 0.6);
+		border-bottom: 1px solid #333;
+		justify-content: normal;
+		z-index: 10;
+	}
+
+	nav a {
+		color: #fff;
+	}
+	nav a:hover {
+		text-decoration: underline;
+	}
+
+	.invite {
+		margin-left: auto;
+		margin-right: 20px;
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		border: 1px solid rgba(100, 100, 100, 0.6);
+		color: white;
+		background-color: transparent;
+		text-decoration: none;
+		font-weight: 500;
+		font-size: 0.875rem;
+		padding: 0.5rem 1rem;
+		border-radius: 0.5rem;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.navbar-brand {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		text-decoration: none;
+		color: white;
+	}
+
+	.logo-img {
+		border-radius: 0.25rem;
+	}
+
+	.nav-links {
+		display: flex;
+		gap: 1.25rem;
+	}
+
+	.nav-links a:not(:last-child)::after {
+		content: '|';
+		color: #666;
+		margin: 0 1rem 0 2rem;
+		font-weight: 400;
+		font-size: 1.3rem;
+	}
+
+	@media (min-width: 640px) {
+		.invite {
+			font-size: 1rem;
+			padding: 0.5rem 1.5rem;
+		}
+	}
+</style>

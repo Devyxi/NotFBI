@@ -1,0 +1,149 @@
+<footer>
+    <div class="footer-container">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="/logo.png" alt="FBI logo" width="48" height="48" class="logo-img"/>
+                    <span class="brand-name">Fox Box Insurance</span>
+                </div>
+                <p>Providing premium protection and moderation for Discord communities since
+                    2025.</p>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <h4 class="footer-heading">Legal</h4>
+                    <ul>
+                        <li><a href="/terms">Terms of Service</a></li>
+                        <li><a href="/privacy">Privacy Policy</a></li>
+                        <li><a href="/refunds">Refund Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Contact</h4>
+                    <ul>
+                        <li><a href="/support">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p>Fox Box Insurance is an independent Discord application and is not affiliated with
+            any other business or product bearing the name "Fox Box Insurance".</p>
+        <br/>
+        <div class="footer-bottom">
+            <p class="footer-copyright">© 2025 FoxTech Industries. All rights reserved.</p>
+            <div class="footer-made">
+        <span>Made with
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
+            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+          </svg>
+        </span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<style>
+	footer {
+		background-color : var(--color-footer);
+		border-top       : 1px solid #333;
+		margin-top       : auto;
+		color            : #ccc;
+		font-family      : sans-serif;
+	}
+
+	.footer-container {
+		max-width : 90rem;
+		margin    : 0 auto;
+		padding   : 3rem 1.5rem;
+	}
+
+	.footer-top {
+		display         : flex;
+		flex-direction  : column;
+		justify-content : space-between;
+		margin-bottom   : 3rem;
+		gap             : 2rem;
+	}
+
+	.footer-brand {
+		max-width : 28rem;
+	}
+
+	.footer-logo {
+		display       : flex;
+		align-items   : center;
+		gap           : 0.5rem;
+		margin-bottom : 1rem;
+	}
+
+	footer p {
+		color : #aaa;
+	}
+
+	.footer-links {
+		display               : grid;
+		grid-template-columns : repeat(2, minmax(0, 1fr));
+		gap                   : 1rem 3rem;
+	}
+
+	.footer-heading {
+		font-size     : 1.125rem;
+		font-weight   : 600;
+		margin-bottom : 1rem;
+		color         : white;
+	}
+
+	footer ul {
+		list-style     : none;
+		padding        : 0;
+		margin         : 0;
+		display        : flex;
+		flex-direction : column;
+		gap            : 0.5rem;
+	}
+
+	footer ul li a {
+		color           : #888;
+	}
+	footer ul li a:hover {
+		color : var(--color-primary);
+	}
+
+	.footer-bottom {
+		border-top      : 1px solid #333;
+		padding-top     : 2rem;
+		display         : flex;
+		flex-direction  : column;
+		align-items     : center;
+		justify-content : space-between;
+		gap             : 1rem;
+	}
+
+	.footer-made {
+		display     : flex;
+		align-items : center;
+		gap         : 0.5rem;
+		color       : #888;
+	}
+
+	.heart-icon {
+		width  : 1rem;
+		height : 1rem;
+		stroke : #888;
+	}
+
+	.footer-made:hover .heart-icon {
+		stroke : #ff6b81;
+	}
+
+	@media (min-width : 640px) {
+		.footer-top {
+			flex-direction : row;
+		}
+
+		.footer-bottom {
+			flex-direction : row;
+		}
+	}
+</style>
