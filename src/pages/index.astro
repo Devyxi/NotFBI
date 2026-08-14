@@ -16,40 +16,34 @@ import Footer from "../components/footer.astro";
 	</head>
 	<body>
 
-		<BgGrid />
+		<div class="bg-grid-fixed">
+			<BgGrid />
+		</div>
 		<Navigation />
 
 		<section class="hero-section">
 			<div class="hero-container">
 				<div class="hero-content">
 					<h1 class="hero-title">
-						You'll forget about it. <br><span style="color: var(--color-primary);">We won't.</span>
+						You'll forget about it.<br><span class="hero-accent">We won't.</span>
 					</h1>
 					<p class="hero-description">
 						Fox Box Insurance delivers unmatched moderation and security, logging every detail so your community stays safe -
 						even when no one's watching.
 					</p>
 					<div class="hero-buttons">
-						<a href="/invite" style="color:#fff;text-decoration:none;">
-							<button class="btn btn-primary">
-								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-									fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-									stroke-linejoin="round" class="btn-icon">
-									<path d="M5 12h14"></path>
-									<path d="M12 5v14"></path>
-								</svg>
-								Add Bot
-							</button>
+						<a href="/invite" class="btn btn-primary">
+							<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+								<path d="M5 12h14"></path>
+								<path d="M12 5v14"></path>
+							</svg>
+							Add Bot
 						</a>
-						<a href="/support" style="color:#fff;text-decoration:none;">
-							<button class="btn btn-secondary">
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="18" height="18"
-									fill="currentColor" class="mr-2" style="margin-right:0.5rem">
-									<path
-										d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z" />
-								</svg>
-								Support Server
-							</button>
+						<a href="/support" class="btn btn-secondary">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="14" height="14" fill="currentColor">
+								<path d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z" />
+							</svg>
+							Support Server
 						</a>
 					</div>
 				</div>
@@ -59,43 +53,136 @@ import Footer from "../components/footer.astro";
 			</div>
 		</section>
 
+		<div class="about-section">
+			<div class="about-container">
+				<div class="about-header">
+					<h2 class="about-title">About Fox Box Insurance</h2>
+					<p class="about-subtitle">Who we are and why we built this</p>
+				</div>
+
+				<div class="about-grid">
+					<div class="about-card">
+						<div class="about-card-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+								<circle cx="12" cy="7" r="4"></circle>
+							</svg>
+						</div>
+						<h3 class="about-card-title">The Team</h3>
+						<p class="about-card-description">
+							Fox Box Insurance is built by the one and only musicmaker. We understand the challenges that server administrators face in maintaining safe, vibrant communities.
+						</p>
+					</div>
+
+					<div class="about-card">
+						<div class="about-card-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"></path>
+								<polyline points="12 6 12 12 16 14"></polyline>
+							</svg>
+						</div>
+						<h3 class="about-card-title">Our Mission</h3>
+						<p class="about-card-description">
+							To provide Discord communities with enterprise-grade security and logging tools that are simple to use, completely free, and built with privacy at their core. We believe every server deserves world-class protection.
+						</p>
+					</div>
+
+					<div class="about-card">
+						<div class="about-card-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<path d="M12 2L15.09 8.26H22L17.45 12.5L19.54 18.76L12 14.51L4.46 18.76L6.55 12.5L2 8.26H8.91L12 2Z"></path>
+							</svg>
+						</div>
+						<h3 class="about-card-title">Why We Built This</h3>
+						<p class="about-card-description">
+							We saw too many communities lose everything to raids, accidental deletions, and rogue administrators. Existing solutions were expensive, complex, or compromised on privacy. So we built FBI-a bot that works silently in the background with zero compromise on security or ethics.
+						</p>
+					</div>
+				</div>
+
+				<div class="about-philosophy">
+					<div class="philosophy-content">
+						<h3 class="philosophy-title">Our Philosophy</h3>
+						<div class="philosophy-points">
+							<div class="philosophy-point">
+								<div class="philosophy-point-number">01</div>
+								<div class="philosophy-point-content">
+									<h4>Privacy First</h4>
+									<p>Your data belongs to you. We don't sell it, analyze it for profit, or use it for AI training. Period.</p>
+								</div>
+							</div>
+							<div class="philosophy-point">
+								<div class="philosophy-point-number">02</div>
+								<div class="philosophy-point-content">
+									<h4>Open & Transparent</h4>
+									<p>Our backend is open source. Our terms are clear. We believe in radical transparency because trust isn't built on secrets.</p>
+								</div>
+							</div>
+							<div class="philosophy-point">
+								<div class="philosophy-point-number">03</div>
+								<div class="philosophy-point-content">
+									<h4>Free & Accessible</h4>
+									<p>Enterprise-grade security shouldn't require a premium subscription. Essential features are free for every community, no matter the size.</p>
+								</div>
+							</div>
+							<div class="philosophy-point">
+								<div class="philosophy-point-number">04</div>
+								<div class="philosophy-point-content">
+									<h4>Silent Guardian</h4>
+									<p>We don't spam your chat. We don't demand attention. We protect quietly and let your community shine.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<div class="stats-section">
 			<div class="stats-container">
 				<div class="stats-grid">
 					<div class="stat-card">
-						<svg xmlns="http://www.w3.org/2000/svg" class="stat-icon">
-							<rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-							<rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-							<line x1="6" y1="6" x2="6.01" y2="6"></line>
-							<line x1="6" y1="18" x2="6.01" y2="18"></line>
-						</svg>
-						<span id="stats-guilds" class="stat-value">Loading ...</span>
+						<div class="stat-icon-wrap">
+							<svg xmlns="http://www.w3.org/2000/svg" class="stat-icon" viewBox="0 0 24 24">
+								<rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+								<rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+								<line x1="6" y1="6" x2="6.01" y2="6"></line>
+								<line x1="6" y1="18" x2="6.01" y2="18"></line>
+							</svg>
+						</div>
+						<span id="stats-guilds" class="stat-value">-</span>
 						<span class="stat-label">Servers</span>
 					</div>
 					<div class="stat-card">
-						<svg xmlns="http://www.w3.org/2000/svg" class="stat-icon">
-							<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-							<circle cx="9" cy="7" r="4"></circle>
-							<path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-							<path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-						</svg>
-						<span id="stats-users" class="stat-value">Loading ...</span>
+						<div class="stat-icon-wrap">
+							<svg xmlns="http://www.w3.org/2000/svg" class="stat-icon" viewBox="0 0 24 24">
+								<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+								<circle cx="9" cy="7" r="4"></circle>
+								<path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+								<path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+							</svg>
+						</div>
+						<span id="stats-users" class="stat-value">-</span>
 						<span class="stat-label">Users</span>
 					</div>
 					<div class="stat-card">
-						<svg xmlns="http://www.w3.org/2000/svg" class="stat-icon">
-							<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-						</svg>
-						<span id="stats-messages" class="stat-value">Loading ...</span>
+						<div class="stat-icon-wrap">
+							<svg xmlns="http://www.w3.org/2000/svg" class="stat-icon" viewBox="0 0 24 24">
+								<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+							</svg>
+						</div>
+						<span id="stats-messages" class="stat-value">-</span>
 						<span class="stat-label">Messages Encrypted</span>
 					</div>
 					<div class="stat-card">
-						<svg xmlns="http://www.w3.org/2000/svg" class="stat-icon">
-							<path d="M21.96 13.4199C21.8233 12.3214 21.326 11.2993 20.546 10.5139C19.766 9.72844 18.7474 9.22406 17.65 9.07977C17.1768 7.75468 16.2529 6.63824 15.0399 5.92523C13.8269 5.21223 12.4019 4.94801 11.0139 5.17914C9.62597 5.41026 8.36341 6.12202 7.4469 7.18964C6.53039 8.25726 6.01826 9.61302 6 11.02C4.93913 11.02 3.92172 11.4412 3.17157 12.1913C2.42142 12.9415 2 13.9591 2 15.02C2 16.0808 2.42142 17.0982 3.17157 17.8483C3.92172 18.5985 4.93913 19.02 6 19.02H12"/>
-							<path d="M18.7793 15V23"/>
-							<path d="M21.98 19.8L18.7801 23L15.5801 19.8"/>
-						</svg>
-						<span id="stats-snapshots" class="stat-value">Loading ...</span>
+						<div class="stat-icon-wrap">
+							<svg xmlns="http://www.w3.org/2000/svg" class="stat-icon" viewBox="0 0 24 24">
+								<path d="M21.96 13.4199C21.8233 12.3214 21.326 11.2993 20.546 10.5139C19.766 9.72844 18.7474 9.22406 17.65 9.07977C17.1768 7.75468 16.2529 6.63824 15.0399 5.92523C13.8269 5.21223 12.4019 4.94801 11.0139 5.17914C9.62597 5.41026 8.36341 6.12202 7.4469 7.18964C6.53039 8.25726 6.01826 9.61302 6 11.02C4.93913 11.02 3.92172 11.4412 3.17157 12.1913C2.42142 12.9415 2 13.9591 2 15.02C2 16.0808 2.42142 17.0982 3.17157 17.8483C3.92172 18.5985 4.93913 19.02 6 19.02H12"/>
+								<path d="M18.7793 15V23"/>
+								<path d="M21.98 19.8L18.7801 23L15.5801 19.8"/>
+							</svg>
+						</div>
+						<span id="stats-snapshots" class="stat-value">-</span>
 						<span class="stat-label">Snapshots</span>
 					</div>
 				</div>
@@ -106,9 +193,8 @@ import Footer from "../components/footer.astro";
 			<div class="comparison-container">
 				<h2 class="comparison-title">Why Fox Box Insurance?</h2>
 				<p class="comparison-description">
-					FBI is not built like other bots, we take security and privacy seriously right out the gate.
-					<br>
-					Built to record and protect silently from the shadows; You won't even know it's there.
+					FBI is not built like other bots - we take security and privacy seriously right out the gate.
+					Built to record and protect silently from the shadows; you won't even know it's there.
 				</p>
 				<div class="table-wrapper">
 					<table class="comparison-table">
@@ -116,128 +202,84 @@ import Footer from "../components/footer.astro";
 							<tr class="table-header-row">
 								<th class="table-header">Feature</th>
 								<th class="table-header">Most Bots</th>
-								<th class="table-header">FBI</th>
+								<th class="table-header fbi-col">
+									<span class="fbi-col-label">FBI</span>
+								</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr class="table-row">
-								<td class="table-cell">Message Logging</td>
+								<td class="table-cell table-cell-feature">Message Logging</td>
 								<td class="table-cell">
 									<div class="feature-status">
-										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-											fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-											stroke-linejoin="round" class="icon-check">
-											<polyline points="20 6 9 17 4 12"></polyline>
-										</svg>
+										<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-check"><polyline points="20 6 9 17 4 12"></polyline></svg>
 										Basic messages
 									</div>
 								</td>
-								<td class="table-cell">
+								<td class="table-cell fbi-col">
 									<div class="feature-status">
-										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-											fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-											stroke-linejoin="round" class="icon-check">
-											<polyline points="20 6 9 17 4 12"></polyline>
-										</svg>
+										<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-primary"><polyline points="20 6 9 17 4 12"></polyline></svg>
 										Full messages, attachments & embeds
 									</div>
 								</td>
 							</tr>
 							<tr class="table-row">
-								<td class="table-cell">Embeds & Attachments</td>
+								<td class="table-cell table-cell-feature">Embeds & Attachments</td>
 								<td class="table-cell">
 									<div class="feature-status">
-										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-											fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-											stroke-linejoin="round" class="icon-warning">
-											<path
-												d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z">
-											</path>
-											<line x1="12" y1="9" x2="12" y2="13"></line>
-											<line x1="12" y1="17" x2="12.01" y2="17"></line>
-										</svg>
+										<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-warning"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
 										Often skipped or limited
 									</div>
 								</td>
-								<td class="table-cell">
+								<td class="table-cell fbi-col">
 									<div class="feature-status">
-										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-											fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-											stroke-linejoin="round" class="icon-check">
-											<polyline points="20 6 9 17 4 12"></polyline>
-										</svg>
+										<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-primary"><polyline points="20 6 9 17 4 12"></polyline></svg>
 										Fully captured & archived
 									</div>
 								</td>
 							</tr>
 							<tr class="table-row">
-								<td class="table-cell">Channel Recovery</td>
+								<td class="table-cell table-cell-feature">Channel Recovery</td>
 								<td class="table-cell">
 									<div class="feature-status">
-										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-											fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-											stroke-linejoin="round" class="icon-x">
-											<line x1="18" y1="6" x2="6" y2="18"></line>
-											<line x1="6" y1="6" x2="18" y2="18"></line>
-										</svg>
+										<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+										Not available
 									</div>
 								</td>
-								<td class="table-cell">
+								<td class="table-cell fbi-col">
 									<div class="feature-status">
-										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-											fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-											stroke-linejoin="round" class="icon-check">
-											<polyline points="20 6 9 17 4 12"></polyline>
-										</svg>
+										<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-primary"><polyline points="20 6 9 17 4 12"></polyline></svg>
 										Up to 10,000 messages
 									</div>
 								</td>
 							</tr>
 							<tr class="table-row">
-								<td class="table-cell">Export Options</td>
+								<td class="table-cell table-cell-feature">Export Options</td>
 								<td class="table-cell">
 									<div class="feature-status">
-										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-											fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-											stroke-linejoin="round" class="icon-x">
-											<line x1="18" y1="6" x2="6" y2="18"></line>
-											<line x1="6" y1="6" x2="18" y2="18"></line>
-										</svg>
-										/ Paid only
+										<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+										Paid only
 									</div>
 								</td>
-								<td class="table-cell">
+								<td class="table-cell fbi-col">
 									<div class="feature-status">
-										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-											fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-											stroke-linejoin="round" class="icon-check">
-											<polyline points="20 6 9 17 4 12"></polyline>
-										</svg>
+										<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-primary"><polyline points="20 6 9 17 4 12"></polyline></svg>
 										Free exports in multiple formats
 									</div>
 								</td>
 							</tr>
 							<tr class="table-row">
-								<td class="table-cell">Privacy</td>
+								<td class="table-cell table-cell-feature">Privacy</td>
 								<td class="table-cell">
 									<div class="feature-status">
-										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-											fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-											stroke-linejoin="round" class="icon-x">
-											<line x1="18" y1="6" x2="6" y2="18"></line>
-											<line x1="6" y1="6" x2="18" y2="18"></line>
-										</svg>
+										<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
 										Vague data use
 									</div>
 								</td>
-								<td class="table-cell">
+								<td class="table-cell fbi-col">
 									<div class="feature-status">
-										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-											fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-											stroke-linejoin="round" class="icon-check">
-											<polyline points="20 6 9 17 4 12"></polyline>
-										</svg>
-										Clear privacy policy & open backend
+										<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-primary"><polyline points="20 6 9 17 4 12"></polyline></svg>
+										Clear policy & open backend
 									</div>
 								</td>
 							</tr>
@@ -320,17 +362,18 @@ import Footer from "../components/footer.astro";
 
 		<div class="cta-section">
 			<div class="cta-container">
-				<div class="cta-content">
-					<div class="cta-text">
-						<h2 class="cta-title">Get Started with Fox Box Insurance today</h2>
-						<p class="cta-description">
-							Adding FBI to your server is simple and free. Join thousands of Discord communities who trust us
-							with their security.
-						</p>
-						<a href="/invite">
-							<button class="cta-button">
-								Add to Discord
-							</button>
+				<div class="cta-inner">
+					<h2 class="cta-title">Get started with Fox Box Insurance today</h2>
+					<p class="cta-description">
+						Adding FBI to your server is simple and free. Join thousands of Discord communities who trust us
+						with their security.
+					</p>
+					<div class="cta-actions">
+						<a href="/invite" class="cta-button-primary">
+							Add to Discord
+						</a>
+						<a href="/support" class="cta-button-ghost">
+							Learn more
 						</a>
 					</div>
 				</div>
@@ -340,9 +383,9 @@ import Footer from "../components/footer.astro";
 		<Footer />
 
 		<script>
-			const POWERS = [ 'K', 'M', 'B', 'T', 'Qa', 'Qi', 'Sx', 'Sp', 'Oc', 'No' ];
+			const POWERS = ['K', 'M', 'B', 'T', 'Qa', 'Qi', 'Sx', 'Sp', 'Oc', 'No'];
 			function SmartRound(input: number): string {
-				input = Math.abs(input); // remove decimal part
+				input = Math.abs(input);
 				if (input < 1000) return input.toString();
 				const power = ~~(Math.log10(input) / 3);
 				const symbol = POWERS[power - 1];
@@ -353,99 +396,132 @@ import Footer from "../components/footer.astro";
 			async function fetchStats() {
 				try {
 					const response = await fetch('https://api.notfbi.dev/stats');
-					const data = await response.json() as { guilds: number, users: number, messages: number, snapshots: number, }
-					document.getElementById('stats-guilds')!.textContent     = data.guilds ? SmartRound(data.guilds) : 'N/A';
-					document.getElementById('stats-users')!.textContent      = data.users ? SmartRound(data.users) : 'N/A';
-					document.getElementById('stats-messages')!.textContent   = data.messages ? SmartRound(data.messages) : 'N/A';
-					document.getElementById('stats-snapshots')!.textContent  = data.snapshots ? SmartRound(data.snapshots) : 'N/A';
+					const data = await response.json() as { guilds: number, users: number, messages: number, snapshots: number }
+					document.getElementById('stats-guilds')!.textContent    = data.guilds    ? SmartRound(data.guilds)    : 'N/A';
+					document.getElementById('stats-users')!.textContent     = data.users     ? SmartRound(data.users)     : 'N/A';
+					document.getElementById('stats-messages')!.textContent  = data.messages  ? SmartRound(data.messages)  : 'N/A';
+					document.getElementById('stats-snapshots')!.textContent = data.snapshots ? SmartRound(data.snapshots) : 'N/A';
 				} catch (error) {
 					console.log(error);
 				}
 			}
 
-			// Fetch stats when the page loads
 			window.addEventListener('DOMContentLoaded', fetchStats);
 		</script>
 	</body>
 </html>
 
 <style is:global>
+	*, *::before, *::after {
+		box-sizing: border-box;
+	}
+
+	.bg-grid-fixed {
+		position: fixed;
+		inset: 0;
+		z-index: 0;
+		pointer-events: none;
+	}
+
+	.bg-grid-fixed > * {
+		position: absolute !important;
+		inset: 0 !important;
+		width: 100% !important;
+		height: 100% !important;
+	}
+
+	body {
+		position: relative;
+		z-index: 1;
+	}
+
 	.hero-section {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		min-height: 100vh;
-		padding: 4rem 0;
-		box-sizing: border-box;
+		padding: 8rem 1.5rem 4rem;
+		position: relative;
+		z-index: 1;
 	}
 
 	.hero-container {
 		max-width: 1152px;
 		margin: 0 auto;
-		padding: 1rem;
 		width: 100%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		gap: 3rem;
 	}
 
 	.hero-content {
 		width: 100%;
-		margin-bottom: 2.5rem;
 	}
 
 	.hero-title {
-		font-size: 1.875rem;
-		font-weight: 700;
-		margin-bottom: 1rem;
-		line-height: 1.2;
+		font-size: 1.75rem;
+		font-weight: 800;
+		margin-bottom: 1.25rem;
+		line-height: 1.08;
+		letter-spacing: -0.04em;
+	}
+
+	.hero-accent {
+		color: var(--color-primary, #ff4800);
+		white-space: nowrap;
 	}
 
 	.hero-description {
-		color: #d1d5db;
+		color: rgba(209, 213, 219, 0.75);
 		margin-bottom: 2rem;
 		font-size: 1rem;
+		line-height: 1.75;
+		max-width: 480px;
 	}
 
 	.hero-buttons {
 		display: flex;
 		flex-wrap: wrap;
-		gap: 1rem;
+		gap: 0.625rem;
 	}
 
 	.btn {
-		font-weight: 500;
-		padding: 0.5rem 1rem;
-		border-radius: 0.5rem;
-		transition: all 0.2s ease;
-		display: flex;
+		font-weight: 600;
+		padding: 0.6rem 1.25rem;
+		border-radius: 0.625rem;
+		transition: all 0.15s ease;
+		display: inline-flex;
 		align-items: center;
-		font-size: 0.875rem;
+		gap: 0.4rem;
+		font-size: 0.85rem;
+		text-decoration: none;
+		border: 1px solid transparent;
+		cursor: pointer;
+		letter-spacing: -0.01em;
 	}
 
 	.btn-primary {
-		background-color: rgba(255, 72, 0, 0.2);
-		border: 1px solid var(--color-primary);
-		color: #ffffff;
+		background: rgba(255, 72, 0, 0.15);
+		border-color: rgba(255, 72, 0, 0.45);
+		color: #fff;
 	}
 
 	.btn-primary:hover {
-		background-color: rgba(255, 72, 0, 0.4);
-		transition: all 0.2s ease;
+		background: rgba(255, 72, 0, 0.25);
+		border-color: rgba(255, 72, 0, 0.75);
 	}
 
 	.btn-secondary {
-		background-color: rgb(10, 10, 10);
-		border: 1px solid var(--color-secondary);
-		color: white;
+		background: rgba(255, 255, 255, 0.04);
+		border-color: rgba(255, 255, 255, 0.1);
+		color: rgba(255, 255, 255, 0.75);
 	}
 
 	.btn-secondary:hover {
-		background-color: rgba(30, 30, 30, 0.6);
-	}
-
-	.btn-icon {
-		margin-right: 0.5rem;
+		background: rgba(255, 255, 255, 0.08);
+		border-color: rgba(255, 255, 255, 0.18);
+		color: #fff;
 	}
 
 	.hero-image-container {
@@ -453,18 +529,168 @@ import Footer from "../components/footer.astro";
 	}
 
 	.hero-image {
-		max-height: 320px;
 		width: 100%;
+		max-height: 400px;
 		object-fit: cover;
-		background-color: var(--color-foreground);
-		border: 1px solid var(--color-foreground);
-		border-radius: 0.5rem;
+		border-radius: 1.25rem;
+		border: 1px solid rgba(255, 255, 255, 0.07);
 	}
 
+	/* ABOUT SECTION STYLES */
+	.about-section {
+		padding: 6rem 1.5rem;
+		position: relative;
+		z-index: 1;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+	}
+
+	.about-container {
+		max-width: 1152px;
+		margin: 0 auto;
+	}
+
+	.about-header {
+		text-align: center;
+		margin-bottom: 3.5rem;
+	}
+
+	.about-title {
+		font-size: 2rem;
+		font-weight: 800;
+		letter-spacing: -0.04em;
+		margin-bottom: 0.5rem;
+	}
+
+	.about-subtitle {
+		color: rgba(209, 213, 219, 0.65);
+		font-size: 0.95rem;
+		line-height: 1.75;
+	}
+
+	.about-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 1.5rem;
+		margin-bottom: 3.5rem;
+	}
+
+	@media (min-width: 768px) {
+		.about-grid {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+
+	.about-card {
+		background: #141418;
+		border: 1px solid rgba(255, 255, 255, 0.06);
+		border-radius: 1rem;
+		padding: 2rem;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		transition: border-color 0.2s ease, background 0.2s ease;
+	}
+
+	.about-card:hover {
+		border-color: rgba(255, 72, 0, 0.2);
+		background: rgba(255, 72, 0, 0.04);
+	}
+
+	.about-card-icon {
+		width: 48px;
+		height: 48px;
+		background: rgba(255, 72, 0, 0.1);
+		border: 1px solid rgba(255, 72, 0, 0.2);
+		border-radius: 0.75rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: var(--color-primary, #ff4800);
+		flex-shrink: 0;
+	}
+
+	.about-card-title {
+		font-size: 1.1rem;
+		font-weight: 700;
+		letter-spacing: -0.02em;
+		margin: 0;
+	}
+
+	.about-card-description {
+		color: rgba(209, 213, 219, 0.65);
+		font-size: 0.875rem;
+		line-height: 1.75;
+		margin: 0;
+	}
+
+	.about-philosophy {
+		background: #141418;
+		border: 1px solid rgba(255, 72, 0, 0.15);
+		border-radius: 1.25rem;
+		padding: 3rem 2rem;
+	}
+
+	.philosophy-content {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+	.philosophy-title {
+		font-size: 1.5rem;
+		font-weight: 800;
+		letter-spacing: -0.03em;
+		margin-bottom: 2rem;
+		text-align: center;
+	}
+
+	.philosophy-points {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 2rem;
+	}
+
+	@media (min-width: 768px) {
+		.philosophy-points {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	.philosophy-point {
+		display: flex;
+		gap: 1.5rem;
+		align-items: flex-start;
+	}
+
+	.philosophy-point-number {
+		font-size: 1.75rem;
+		font-weight: 800;
+		color: rgba(255, 72, 0, 0.4);
+		flex-shrink: 0;
+		line-height: 1;
+	}
+
+	.philosophy-point-content h4 {
+		font-size: 1rem;
+		font-weight: 700;
+		margin: 0 0 0.5rem 0;
+		letter-spacing: -0.02em;
+	}
+
+	.philosophy-point-content p {
+		color: rgba(209, 213, 219, 0.65);
+		font-size: 0.875rem;
+		line-height: 1.75;
+		margin: 0;
+	}
+
+	/* END ABOUT SECTION STYLES */
+
 	.stats-section {
-		padding: 3rem 1rem;
-		border-top: 1px solid var(--color-border, #2d2d2d);
-		border-bottom: 1px solid var(--color-border, #2d2d2d);
+		padding: 3rem 1.5rem;
+		border-top: 1px solid rgba(255, 255, 255, 0.05);
+		border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+		position: relative;
+		z-index: 1;
 	}
 
 	.stats-container {
@@ -475,46 +701,68 @@ import Footer from "../components/footer.astro";
 	.stats-grid {
 		display: grid;
 		grid-template-columns: 1fr;
-		gap: 1.5rem;
+		gap: 0.75rem;
 	}
 
-	/* Tablet */
 	@media (min-width: 640px) {
-		.stats-grid {
-			grid-template-columns: repeat(2, 1fr);
-		}
+		.stats-grid { grid-template-columns: repeat(2, 1fr); }
 	}
 
-	/* Small desktop */
-	@media (min-width: 1024px) {
-		.stats-grid {
-			grid-template-columns: repeat(3, 1fr);
-		}
-	}
-
-	/* Large desktop */
 	@media (min-width: 1280px) {
-		.stats-grid {
-			grid-template-columns: repeat(4, 1fr);
-		}
+		.stats-grid { grid-template-columns: repeat(4, 1fr); }
 	}
 
 	.stat-card {
-		background-color: rgba(255, 72, 10, 0.03);
-		border: 1px solid rgba(10, 10, 10, 0.4);
-		border-radius: 0.5rem;
-		padding: 1.5rem;
+		position: relative;
+		background: #141418;
+		border: 1px solid rgba(255, 255, 255, 0.06);
+		border-radius: 1rem;
+		padding: 1.75rem 1.5rem;
 		display: flex;
 		flex-direction: column;
+		align-items: flex-start;
+		gap: 0.25rem;
+		overflow: hidden;
+		transition: border-color 0.2s ease, background 0.2s ease;
+	}
+
+	.stat-card::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 1px;
+		background: linear-gradient(90deg, transparent, rgba(255, 72, 0, 0.4), transparent);
+		opacity: 0;
+		transition: opacity 0.2s ease;
+	}
+
+	.stat-card:hover {
+		border-color: rgba(255, 72, 0, 0.2);
+		background: rgba(255, 72, 0, 0.04);
+	}
+
+	.stat-card:hover::before {
+		opacity: 1;
+	}
+
+	.stat-icon-wrap {
+		width: 36px;
+		height: 36px;
+		background: rgba(255, 72, 0, 0.1);
+		border: 1px solid rgba(255, 72, 0, 0.18);
+		border-radius: 0.625rem;
+		display: flex;
 		align-items: center;
-		text-align: center;
+		justify-content: center;
+		margin-bottom: 1rem;
 	}
 
 	.stat-icon {
 		color: var(--color-primary, #ff4800);
-		margin-bottom: 0.75rem;
-		width: 32px;
-		height: 32px;
+		width: 16px;
+		height: 16px;
 		stroke-width: 2;
 		stroke-linecap: round;
 		stroke-linejoin: round;
@@ -523,18 +771,23 @@ import Footer from "../components/footer.astro";
 	}
 
 	.stat-value {
-		font-size: 1.5rem;
-		font-weight: 700;
+		font-size: 2rem;
+		font-weight: 800;
+		letter-spacing: -0.04em;
+		line-height: 1;
 	}
 
 	.stat-label {
-		color: #d1d5db;
-		margin-top: 0.25rem;
+		color: rgba(209, 213, 219, 0.45);
+		font-size: 0.75rem;
+		font-weight: 500;
+		margin-top: 0.2rem;
 	}
 
 	.comparison-section {
-		padding: 4rem 1rem;
-		background-color: var(--color-tertiary, #111111);
+		padding: 6rem 1.5rem;
+		position: relative;
+		z-index: 1;
 	}
 
 	.comparison-container {
@@ -543,24 +796,26 @@ import Footer from "../components/footer.astro";
 	}
 
 	.comparison-title {
-		font-size: 1.875rem;
-		font-weight: 700;
-		color: var(--color-primary, #ff4800);
-		text-align: center;
-		margin-bottom: 3rem;
+		font-size: 2rem;
+		font-weight: 800;
+		letter-spacing: -0.04em;
+		margin-bottom: 0.875rem;
 	}
 
 	.comparison-description {
-		color: #d1d5db;
-		text-align: center;
-		margin-bottom: 2rem;
+		color: rgba(209, 213, 219, 0.65);
+		margin-bottom: 2.5rem;
+		max-width: 540px;
+		line-height: 1.75;
+		font-size: 0.925rem;
 	}
 
 	.table-wrapper {
 		width: 100%;
 		overflow-x: auto;
-		border-radius: 0.5rem;
-		border: 1px solid var(--color-border, #2d2d2d);
+		border-radius: 1rem;
+		border: 1px solid rgba(255, 255, 255, 0.07);
+		background: #141418;
 	}
 
 	.comparison-table {
@@ -569,21 +824,57 @@ import Footer from "../components/footer.astro";
 	}
 
 	.table-header-row {
-		background-color: var(--color-secondary, #0a0a0a);
-		border: 1px solid var(--color-border, #2d2d2d);
+		background: #1a1a1e;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.07);
 	}
 
 	.table-header {
-		padding: 0.75rem;
+		padding: 0.875rem 1.25rem;
 		text-align: left;
+		font-size: 0.75rem;
+		font-weight: 600;
+		color: rgba(255, 255, 255, 0.3);
+	}
+
+	.table-header.fbi-col {
+		color: var(--color-primary, #ff4800);
+	}
+
+	.fbi-col-label {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.4rem;
 	}
 
 	.table-row {
-		border-bottom: 1px solid var(--color-border, #2d2d2d);
+		border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+		transition: background 0.12s ease;
+	}
+
+	.table-row:last-child {
+		border-bottom: none;
+	}
+
+	.table-row:hover {
+		background: #141418;
 	}
 
 	.table-cell {
-		padding: 0.75rem;
+		padding: 0.875rem 1.25rem;
+		font-size: 0.85rem;
+		color: rgba(255, 255, 255, 0.6);
+		vertical-align: middle;
+	}
+
+	.table-cell-feature {
+		font-weight: 500;
+		color: rgba(255, 255, 255, 0.85);
+		font-size: 0.85rem;
+	}
+
+	.table-cell.fbi-col {
+		color: rgba(255, 255, 255, 0.88);
+		background: rgba(255, 72, 0, 0.03);
 	}
 
 	.feature-status {
@@ -592,44 +883,45 @@ import Footer from "../components/footer.astro";
 		gap: 0.5rem;
 	}
 
-	.icon-check {
-		color: #10b981;
-	}
-
-	.icon-warning {
-		color: #f59e0b;
-	}
-
-	.icon-x {
-		color: #ef4444;
-	}
+	.icon-primary { color: var(--color-primary, #ff4800); }
+	.icon-check   { color: #10b981; }
+	.icon-warning { color: #f59e0b; }
+	.icon-x       { color: rgba(255, 255, 255, 0.2); }
 
 	.features-section {
-		padding: 4rem 0;
+		padding: 6rem 0;
+		position: relative;
+		z-index: 1;
 	}
 
 	.features-container {
 		max-width: 1152px;
 		margin: 0 auto;
-		padding: 0 1rem;
+		padding: 0 1.5rem;
 	}
 
 	.features-title {
-		font-size: 1.875rem;
-		font-weight: 700;
-		text-align: center;
-		margin-bottom: 4rem;
+		font-size: 2rem;
+		font-weight: 800;
+		letter-spacing: -0.04em;
+		margin-bottom: 2rem;
 	}
 
 	.feature-card {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
-		margin-bottom: 3rem;
-		border: 1px solid var(--color-border, #2d2d2d);
-		background-color: var(--color-tertiary, #111111);
-		border-radius: 0.5rem;
+		align-items: stretch;
+		margin-bottom: 0.75rem;
+		border: 1px solid rgba(255, 255, 255, 0.06);
+		background: #141418;
+		border-radius: 1.25rem;
 		overflow: hidden;
+		transition: border-color 0.2s ease, background 0.2s ease;
+	}
+
+	.feature-card:hover {
+		border-color: rgba(255, 72, 0, 0.22);
+		background: #171410;
 	}
 
 	.feature-card:last-child {
@@ -638,11 +930,13 @@ import Footer from "../components/footer.astro";
 
 	.feature-image-container {
 		width: 100%;
-		height: 12rem;
-		background-color: rgba(10, 10, 10, 0.2);
+		height: 11rem;
+		background: rgba(255, 72, 0, 0.03);
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+		flex-shrink: 0;
 	}
 
 	.feature-image {
@@ -651,25 +945,28 @@ import Footer from "../components/footer.astro";
 	}
 
 	.feature-content {
-		width: 100%;
-		padding: 1.5rem;
+		padding: 2rem 2.25rem;
 	}
 
 	.feature-heading {
-		font-size: 1.25rem;
+		font-size: 1.2rem;
 		font-weight: 700;
-		margin-bottom: 1rem;
+		letter-spacing: -0.025em;
+		margin-bottom: 0.625rem;
 	}
 
 	.feature-description {
-		color: #d1d5db;
+		color: rgba(209, 213, 219, 0.65);
+		line-height: 1.75;
+		font-size: 0.875rem;
 	}
 
 	.security-section {
-		padding: 4rem 1rem;
-		background-color: var(--color-tertiary, #111111);
-		border-top: 1px solid var(--color-border, #2d2d2d);
-		border-bottom: 1px solid var(--color-border, #2d2d2d);
+		padding: 6rem 1.5rem;
+		border-top: 1px solid rgba(255, 255, 255, 0.05);
+		border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+		position: relative;
+		z-index: 1;
 	}
 
 	.security-container {
@@ -681,133 +978,167 @@ import Footer from "../components/footer.astro";
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		gap: 2rem;
+		gap: 2.5rem;
+		background: #141418;
+		border: 1px solid rgba(255, 255, 255, 0.06);
+		border-radius: 1.25rem;
+		padding: 2.5rem;
 	}
 
 	.security-image-wrapper {
-		margin-bottom: 2rem;
 		display: flex;
 		justify-content: center;
-		width: 100%;
+		flex-shrink: 0;
 	}
 
 	.security-image {
-		height: 100%;
-		width: 100%;
+		height: 130px;
+		width: 130px;
 		object-fit: cover;
+		border-radius: 1rem;
+		border: 1px solid rgba(255, 255, 255, 0.07);
 	}
 
 	.security-title {
-		font-size: 1.25rem;
-		font-weight: 700;
-		margin-bottom: 1rem;
+		font-size: 1.4rem;
+		font-weight: 800;
+		letter-spacing: -0.03em;
+		margin-bottom: 0.875rem;
 	}
 
 	.security-description {
-		color: #d1d5db;
-		margin-bottom: 1.5rem;
+		color: rgba(209, 213, 219, 0.65);
+		line-height: 1.8;
+		font-size: 0.875rem;
 	}
 
 	.cta-section {
-		padding: 4rem 1rem;
+		padding: 5rem 1.5rem;
+		position: relative;
+		z-index: 1;
 	}
 
 	.cta-container {
 		max-width: 1152px;
 		margin: 0 auto;
-		border: 1px solid var(--color-border, #2d2d2d);
-		background-color: var(--color-tertiary, #111111);
-		border-radius: 0.5rem;
-		overflow: hidden;
 	}
 
-	.cta-content {
+	.cta-inner {
+		border: 1px solid rgba(255, 72, 0, 0.18);
+		background: #171410;
+		border-radius: 1.5rem;
+		padding: 4rem 2rem;
 		display: flex;
+		flex-direction: column;
 		align-items: center;
-		justify-content: center;
-	}
-
-	.cta-text {
-		padding: 2rem;
 		text-align: center;
-		width: 100%;
+		max-width: 560px;
+		margin: 0 auto;
 	}
 
 	.cta-title {
-		font-size: 1.5rem;
-		font-weight: 700;
-		margin-bottom: 1rem;
+		font-size: 1.65rem;
+		font-weight: 800;
+		letter-spacing: -0.04em;
+		margin-bottom: 0.75rem;
+		line-height: 1.15;
 	}
 
 	.cta-description {
-		margin-bottom: 1.5rem;
+		color: rgba(209, 213, 219, 0.65);
+		margin-bottom: 2rem;
+		line-height: 1.75;
+		font-size: 0.875rem;
 	}
 
-	.cta-button {
-		background-color: rgba(255, 72, 0, 0.2);
-		border: 1px solid var(--color-primary, #ff4800);
-		color: #ffffff;
-		font-weight: 500;
-		padding: 0.75rem 2rem;
-		border-radius: 0.5rem;
-		transition: all 0.2s ease;
+	.cta-actions {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.625rem;
+		justify-content: center;
 	}
 
-	.cta-button:hover {
-		background-color: rgba(255, 72, 0, 0.4);
+	.cta-button-primary {
+		display: inline-flex;
+		align-items: center;
+		background: rgba(255, 72, 0, 0.15);
+		border: 1px solid rgba(255, 72, 0, 0.45);
+		color: #fff;
+		font-weight: 600;
+		font-size: 0.85rem;
+		padding: 0.65rem 1.75rem;
+		border-radius: 0.625rem;
+		text-decoration: none;
+		transition: all 0.15s ease;
+		letter-spacing: -0.01em;
+	}
+
+	.cta-button-primary:hover {
+		background: rgba(255, 72, 0, 0.25);
+		border-color: rgba(255, 72, 0, 0.75);
+	}
+
+	.cta-button-ghost {
+		display: inline-flex;
+		align-items: center;
+		background: rgba(255, 255, 255, 0.04);
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		color: rgba(255, 255, 255, 0.65);
+		font-weight: 600;
+		font-size: 0.85rem;
+		padding: 0.65rem 1.75rem;
+		border-radius: 0.625rem;
+		text-decoration: none;
+		transition: all 0.15s ease;
+		letter-spacing: -0.01em;
+	}
+
+	.cta-button-ghost:hover {
+		background: rgba(255, 255, 255, 0.08);
+		border-color: rgba(255, 255, 255, 0.18);
+		color: #fff;
+	}
+
+	@media (min-width: 480px) {
+		.hero-title { font-size: 2.25rem; }
 	}
 
 	@media (min-width: 640px) {
-		.security-title {
-			font-size: 1.5rem;
-		}
-
-		.feature-image-container {
-			height: 16rem;
-		}
-
-		.feature-content {
-			padding: 2rem;
-		}
-
-		.feature-heading {
-			font-size: 1.5rem;
-		}
-
-		.comparison-title {
-			font-size: 2.25rem;
-		}
-
-		.hero-title {
-			font-size: 2.25rem;
-		}
-
-		.hero-description {
-			font-size: 1.125rem;
-		}
-
-		.btn {
-			padding: 0.75rem 1.5rem;
-			font-size: 1rem;
-		}
+		.hero-title { font-size: 2.75rem; }
+		.hero-description { font-size: 1.05rem; }
+		.feature-image-container { height: 15rem; }
+		.feature-heading { font-size: 1.35rem; }
+		.comparison-title { font-size: 2.5rem; }
+		.features-title { font-size: 2.5rem; }
+		.security-title { font-size: 1.75rem; }
+		.cta-title { font-size: 2.1rem; }
+		.about-title { font-size: 2.5rem; }
 	}
 
 	@media (min-width: 768px) {
-		.cta-text {
-			width: 60%;
+		.hero-container {
+			flex-direction: row;
+			align-items: center;
+		}
+
+		.hero-content {
+			width: 50%;
+		}
+
+		.hero-title { font-size: 2.75rem; }
+
+		.hero-image-container {
+			width: 50%;
 		}
 
 		.security-content {
 			flex-direction: row;
+			align-items: flex-start;
 		}
 
-		.security-image-wrapper {
-			width: 33.333%;
-			margin-bottom: 0;
-		}
-
-		.security-text {
-			width: 66.667%;
+		.security-image {
+			height: 170px;
+			width: 170px;
 		}
 
 		.feature-card {
@@ -819,33 +1150,26 @@ import Footer from "../components/footer.astro";
 		}
 
 		.feature-image-container {
-			width: 40%;
+			width: 35%;
+			height: auto;
+			border-bottom: none;
+			border-right: 1px solid rgba(255, 255, 255, 0.05);
+		}
+
+		.feature-card.reverse .feature-image-container {
+			border-right: none;
+			border-left: 1px solid rgba(255, 255, 255, 0.05);
 		}
 
 		.feature-content {
-			width: 60%;
+			width: 65%;
 		}
+	}
 
-		.stat-value {
-			font-size: 1.875rem;
-		}
-
-		.hero-container {
-			flex-direction: row;
-		}
-
-		.hero-content {
-			width: 50%;
-			margin-bottom: 0;
-		}
-
-		.hero-title {
-			font-size: 3rem;
-		}
-
-		.hero-image-container {
-			width: 50%;
-			padding-left: 2.5rem;
-		}
+	@media (min-width: 1024px) {
+		.hero-title { font-size: 3.5rem; }
+		.comparison-title { font-size: 2.75rem; }
+		.features-title { font-size: 2.75rem; }
+		.about-title { font-size: 2.75rem; }
 	}
 </style>
