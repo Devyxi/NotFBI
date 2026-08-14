@@ -409,25 +409,18 @@ import logoAnimation from "../assets/logo-animation.mp4";
 			}
 
 			window.addEventListener('DOMContentLoaded', fetchStats);
-
-			// Logo animation interaction
 			window.addEventListener('DOMContentLoaded', () => {
 				const logoImage = document.getElementById('logoImage') as HTMLImageElement;
 				const logoVideo = document.getElementById('logoVideo') as HTMLVideoElement;
 
 				if (logoImage && logoVideo) {
 					logoImage.addEventListener('click', () => {
-						// Show video and hide image
 						logoImage.style.opacity = '0';
 						logoImage.style.pointerEvents = 'none';
 						logoVideo.style.display = 'block';
 						logoVideo.style.opacity = '1';
-						
-						// Play video
 						logoVideo.play();
 					});
-
-					// When video ends, fade back to image
 					logoVideo.addEventListener('ended', () => {
 						logoVideo.style.opacity = '0';
 						logoVideo.style.pointerEvents = 'none';
