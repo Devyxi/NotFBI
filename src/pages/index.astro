@@ -6,6 +6,7 @@ import BgGrid from "../components/bg-grid.astro";
 import Navigation from "../components/navigation.astro";
 import Embed from "../components/embed.astro";
 import Footer from "../components/footer.astro";
+import logoAnimation from "../assets/logo-animation.mp4";
 ---
 <html lang="en">
 	<head>
@@ -83,7 +84,7 @@ import Footer from "../components/footer.astro";
 						</div>
 						<h3 class="about-card-title">Our Mission</h3>
 						<p class="about-card-description">
-							To provide Discord communities with enterprise-grade security and logging tools that are simple to use, completely free, and built with privacy at their core. We believe every server deserves world-class protection.
+							To provide Discord communities with excellent security and logging tools that are simple to use, completely free, and built with privacy at their core. We believe every server deserves high-quality protection.
 						</p>
 					</div>
 
@@ -95,7 +96,7 @@ import Footer from "../components/footer.astro";
 						</div>
 						<h3 class="about-card-title">Why We Built This</h3>
 						<p class="about-card-description">
-							We saw too many communities lose everything to raids, accidental deletions, and rogue administrators. Existing solutions were expensive, complex, or compromised on privacy. So we built FBI-a bot that works silently in the background with zero compromise on security or ethics.
+							We saw too many communities lose everything to raids, accidental deletions, and rogue administrators. Existing solutions were expensive, complex, or compromised on privacy. So we built FBI- a bot that works silently in the background with zero compromise on security or ethics.
 						</p>
 					</div>
 				</div>
@@ -122,7 +123,7 @@ import Footer from "../components/footer.astro";
 								<div class="philosophy-point-number">03</div>
 								<div class="philosophy-point-content">
 									<h4>Free & Accessible</h4>
-									<p>Enterprise-grade security shouldn't require a premium subscription. Essential features are free for every community, no matter the size.</p>
+									<p>High-quality security shouldn't require a premium subscription. Essential features are free for every community, no matter the size.</p>
 								</div>
 							</div>
 							<div class="philosophy-point">
@@ -341,7 +342,8 @@ import Footer from "../components/footer.astro";
 			<div class="security-container">
 				<div class="security-content">
 					<div class="security-image-wrapper">
-						<img src="/logo.png" alt="Lock icon" class="security-image" />
+						<img id="logoImage" src="/logo.png" alt="Lock icon" class="security-image security-image-clickable" />
+						<video id="logoVideo" class="security-image security-image-video" style="display: none;" muted playsinline src={logoAnimation}></video>
 					</div>
 					<div class="security-text">
 						<h3 class="security-title">Private by Design</h3>
@@ -407,6 +409,34 @@ import Footer from "../components/footer.astro";
 			}
 
 			window.addEventListener('DOMContentLoaded', fetchStats);
+
+			// Logo animation interaction
+			window.addEventListener('DOMContentLoaded', () => {
+				const logoImage = document.getElementById('logoImage') as HTMLImageElement;
+				const logoVideo = document.getElementById('logoVideo') as HTMLVideoElement;
+
+				if (logoImage && logoVideo) {
+					logoImage.addEventListener('click', () => {
+						// Show video and hide image
+						logoImage.style.opacity = '0';
+						logoImage.style.pointerEvents = 'none';
+						logoVideo.style.display = 'block';
+						logoVideo.style.opacity = '1';
+						
+						// Play video
+						logoVideo.play();
+					});
+
+					// When video ends, fade back to image
+					logoVideo.addEventListener('ended', () => {
+						logoVideo.style.opacity = '0';
+						logoVideo.style.pointerEvents = 'none';
+						logoImage.style.opacity = '1';
+						logoImage.style.pointerEvents = 'auto';
+						logoVideo.style.display = 'none';
+					});
+				}
+			});
 		</script>
 	</body>
 </html>
@@ -989,6 +1019,7 @@ import Footer from "../components/footer.astro";
 		display: flex;
 		justify-content: center;
 		flex-shrink: 0;
+		position: relative;
 	}
 
 	.security-image {
@@ -997,6 +1028,23 @@ import Footer from "../components/footer.astro";
 		object-fit: cover;
 		border-radius: 1rem;
 		border: 1px solid rgba(255, 255, 255, 0.07);
+		transition: opacity 0.3s ease;
+	}
+
+	.security-image-clickable {
+		cursor: none;
+		user-select: none;
+	}
+
+	.security-image-clickable:hover {
+		cursor: none;
+	}
+
+	.security-image-video {
+		position: absolute;
+		top: 0;
+		left: 0;
+		transition: opacity 0.3s ease;
 	}
 
 	.security-title {
