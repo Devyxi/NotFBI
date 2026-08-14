@@ -1,0 +1,185 @@
+---
+import "../styles/reset.astro";
+import "../styles/global.astro";
+
+import BgGrid from "../components/bg-grid.astro";
+import Navigation from "../components/navigation.astro";
+import Embed from "../components/embed.astro";
+import Footer from "../components/footer.astro";
+---
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>History - Fox Box Insurance</title>
+		<Embed />
+	</head>
+	<body>
+
+		<div class="bg-grid-fixed">
+			<BgGrid />
+		</div>
+		<Navigation />
+
+		<section class="coming-soon-hero">
+			<div class="coming-soon-container">
+				<div class="coming-soon-content">
+					<div class="coming-soon-badge">
+						<span>Coming Soon</span>
+					</div>
+					<h1 class="coming-soon-title">History</h1>
+					<p class="coming-soon-description">
+						We're building something special. A comprehensive view of your server's complete history, changes, and evolution over time.
+					</p>
+					<p class="coming-soon-subtext">
+						Expected arrival: N/A
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="coming-soon-cta">
+			<div class="coming-soon-cta-container">
+				<h2>Stay Updated</h2>
+				<p>Be the first to know when History launches</p>
+				<div class="cta-action">
+					<a href="/support" class="cta-link">
+						Join Our Support Server
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<Footer />
+
+		<script>
+		</script>
+	</body>
+</html>
+
+<style is:global>
+	.coming-soon-hero {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 100vh;
+		padding: 4rem 1.5rem;
+		position: relative;
+		z-index: 1;
+	}
+
+	.coming-soon-container {
+		max-width: 700px;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.coming-soon-content {
+		text-align: center;
+		margin-bottom: 4rem;
+	}
+
+	.coming-soon-badge {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		background: rgba(255, 72, 0, 0.1);
+		border: 1px solid rgba(255, 72, 0, 0.2);
+		color: #ff4800;
+		font-size: 0.75rem;
+		font-weight: 600;
+		padding: 0.5rem 1rem;
+		border-radius: 0.5rem;
+		margin-bottom: 1.5rem;
+		letter-spacing: 0.05em;
+	}
+
+	.coming-soon-title {
+		font-size: 3.5rem;
+		font-weight: 800;
+		margin-bottom: 1rem;
+		letter-spacing: -0.04em;
+		line-height: 1.1;
+	}
+
+	.coming-soon-description {
+		color: rgba(209, 213, 219, 0.75);
+		font-size: 1.1rem;
+		line-height: 1.75;
+		margin-bottom: 1rem;
+	}
+
+	.coming-soon-subtext {
+		color: rgba(209, 213, 219, 0.45);
+		font-size: 0.95rem;
+		margin: 0;
+	}
+
+	.coming-soon-cta {
+		padding: 6rem 1.5rem;
+		border-top: 1px solid rgba(255, 255, 255, 0.05);
+		position: relative;
+		z-index: 1;
+	}
+
+	.coming-soon-cta-container {
+		max-width: 600px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.coming-soon-cta-container h2 {
+		font-size: 2rem;
+		font-weight: 800;
+		letter-spacing: -0.04em;
+		margin-bottom: 0.5rem;
+	}
+
+	.coming-soon-cta-container p {
+		color: rgba(209, 213, 219, 0.65);
+		font-size: 1rem;
+		margin-bottom: 2rem;
+		line-height: 1.75;
+	}
+
+	.cta-action {
+		display: flex;
+		justify-content: center;
+	}
+
+	.cta-link {
+		display: inline-flex;
+		align-items: center;
+		background: rgba(255, 72, 0, 0.15);
+		border: 1px solid rgba(255, 72, 0, 0.45);
+		color: #fff;
+		font-weight: 600;
+		font-size: 0.9rem;
+		padding: 0.75rem 1.75rem;
+		border-radius: 0.625rem;
+		text-decoration: none;
+		transition: all 0.15s ease;
+		letter-spacing: -0.01em;
+	}
+
+	.cta-link:hover {
+		background: rgba(255, 72, 0, 0.25);
+		border-color: rgba(255, 72, 0, 0.75);
+	}
+
+	@media (min-width: 640px) {
+		.coming-soon-title {
+			font-size: 4rem;
+		}
+	}
+
+	@media (min-width: 1024px) {
+		.coming-soon-title {
+			font-size: 4.5rem;
+		}
+
+		.coming-soon-description {
+			font-size: 1.25rem;
+		}
+	}
+</style>
