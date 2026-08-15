@@ -11,6 +11,7 @@ import About from './about'
 import History from './history'
 import Roadmap from './roadmap'
 import PrivacyPolicy from './privacy'
+import RefundPolicy from './refunds'
 import TOS from './tos'
 import App from './App'
 import NotFound from './404'
@@ -35,6 +36,7 @@ createRoot(document.getElementById('root')!).render(
           <Route path="/history" element={<History />} />
           <Route path="/roadmap" element={<Roadmap />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/refunds-policy" element={<RefundPolicy />} />
           <Route path="/terms" element={<TOS />} />
           <Route path="/roadmap" element={<Roadmap />} />
         </Route>

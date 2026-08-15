@@ -12,6 +12,7 @@ const links = {
     { href: '/support', label: 'Support Server' },
     { href: '/terms', label: 'Terms Of Service' },
     { href: '/privacy', label: 'Privacy Policy' },
+    { href: '/refunds-policy', label: 'Refunds Policy' },
   ],
 }
 
