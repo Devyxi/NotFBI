@@ -10,7 +10,7 @@ const links = {
   Resources: [
     { href: '/invite', label: 'Invite Bot' },
     { href: '/support', label: 'Support Server' },
-    { href: '/docs', label: 'Documentation' },
+    { href: '/terms', label: 'Terms Of Service' },
     { href: '/privacy', label: 'Privacy Policy' },
   ],
 }
