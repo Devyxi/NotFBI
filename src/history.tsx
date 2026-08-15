@@ -35,9 +35,28 @@ export default function History() {
             textAlign: 'center',
             marginBottom: '1rem',
             position: 'relative',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.2em',
           }}
         >
-          Coming <span style={{ color: 'var(--ember)' }}>Soon.</span>
+          Coming
+          <span style={{ display: 'inline-flex', alignItems: 'center', gap: 0 }}>
+            <span
+              style={{
+                background: 'var(--ember)',
+                color: '#000',
+                fontWeight: 800,
+                borderRadius: '6px',
+                padding: '0 0.18em',
+                lineHeight: 1.15,
+                letterSpacing: '-0.03em',
+              }}
+            >
+              Soon
+            </span>
+            <span style={{ color: 'var(--bright)' }}>.</span>
+          </span>
         </h1>
 
         <p
