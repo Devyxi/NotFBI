@@ -1,0 +1,49 @@
+:root {
+  --ink: #0d0d10;
+  --muted: rgba(255, 255, 255, 0.42);
+  --bright: #ffffff;
+  --line: rgba(255, 255, 255, 0.13);
+  --ember: #ff4800;
+  --surface: rgba(255, 255, 255, 0.04);
+  --sans: system-ui, -apple-system, sans-serif;
+
+  font: 16px/1.6 var(--sans);
+  color: var(--muted);
+  background: var(--ink);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--ink);
+}
+
+#root {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4 {
+  color: var(--bright);
+  font-family: var(--sans);
+  letter-spacing: -0.04em;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--bright);
+  text-decoration: none;
+}

@@ -1,0 +1,133 @@
+footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 3rem 5rem 2rem;
+  font-family: system-ui, -apple-system, sans-serif;
+  box-sizing: border-box;
+}
+
+.footer-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 4rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.footer-logo {
+  border-radius: 999px;
+  display: block;
+  flex-shrink: 0;
+}
+
+.footer-brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.06rem;
+}
+
+.footer-brand-name {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.025em;
+  white-space: nowrap;
+  line-height: 1.2;
+}
+
+.footer-brand-tagline {
+  font-size: 0.72rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.42);
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  line-height: 1.2;
+}
+
+.footer-cols {
+  display: flex;
+  gap: 4rem;
+  margin-left: auto;
+}
+
+.footer-col h4 {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.3);
+  letter-spacing: 0.03em;
+  margin: 0 0 0.85rem;
+}
+
+.footer-col ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.footer-col ul li a {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.42);
+  text-decoration: none;
+  letter-spacing: -0.015em;
+  transition: color 0.12s ease;
+}
+
+.footer-col ul li a:hover {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.75rem;
+}
+
+.footer-copy {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.25);
+  letter-spacing: -0.01em;
+}
+
+.footer-copy span {
+  color: rgba(255, 255, 255, 0.42);
+}
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.footer-socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+  transition: color 0.12s ease, background 0.12s ease;
+}
+
+.footer-socials a:hover {
+  color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.06);
+}

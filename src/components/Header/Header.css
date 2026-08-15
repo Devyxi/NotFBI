@@ -1,0 +1,114 @@
+nav {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 1.125rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 2.5rem);
+  max-width: 1000px;
+  padding: 0.625rem 0.625rem 0.625rem 0.75rem;
+  background: rgba(13, 13, 16, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 999px;
+  z-index: 100;
+  gap: 1.25rem;
+  font-family: system-ui, -apple-system, sans-serif;
+  box-sizing: border-box;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  flex-shrink: 0;
+}
+
+.logo-img {
+  border-radius: 999px;
+  display: block;
+  flex-shrink: 0;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.06rem;
+}
+
+.brand-name {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.025em;
+  white-space: nowrap;
+  line-height: 1.2;
+}
+
+.brand-tagline {
+  font-size: 0.72rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.42);
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  line-height: 1.2;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin-left: auto;
+}
+
+.nav-links a {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.42);
+  padding: 0.45rem 0.95rem;
+  border-radius: 999px;
+  transition: color 0.12s ease;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+}
+
+.nav-links a:hover {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.nav-links a.active {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.invite {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-weight: 600;
+  font-size: 0.875rem;
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+  transition: background 0.12s ease, border-color 0.12s ease;
+  white-space: nowrap;
+  flex-shrink: 0;
+  letter-spacing: -0.02em;
+}
+
+.invite:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.5);
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.invite svg {
+  flex-shrink: 0;
+}
