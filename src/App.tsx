@@ -94,6 +94,7 @@ export default function App() {
             </p>
 
             <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
+            <a href="/invite" style={{ textDecoration: 'none' }}>
               <button
                 onMouseEnter={e => { (e.currentTarget as HTMLButtonElement).style.background = '#ff6a2a'; (e.currentTarget as HTMLButtonElement).style.transform = 'translateY(-1px)' }}
                 onMouseLeave={e => { (e.currentTarget as HTMLButtonElement).style.background = 'var(--ember)'; (e.currentTarget as HTMLButtonElement).style.transform = 'translateY(0)' }}
@@ -102,7 +103,9 @@ export default function App() {
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1v12M1 7h12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></svg>
                 Add Bot
               </button>
+            </a>
 
+            <a href="/support" style={{ textDecoration: 'none' }}>
               <button
                 onMouseEnter={e => { (e.currentTarget as HTMLButtonElement).style.borderColor = 'rgba(255,255,255,0.25)'; (e.currentTarget as HTMLButtonElement).style.color = '#fff'; (e.currentTarget as HTMLButtonElement).style.transform = 'translateY(-1px)' }}
                 onMouseLeave={e => { (e.currentTarget as HTMLButtonElement).style.borderColor = 'var(--line)'; (e.currentTarget as HTMLButtonElement).style.color = 'var(--muted)'; (e.currentTarget as HTMLButtonElement).style.transform = 'translateY(0)' }}
@@ -110,6 +113,7 @@ export default function App() {
               >
                 Support Server
               </button>
+            </a>
             </div>
 
             <div style={{ display: 'flex', gap: '2rem', marginTop: '3rem' }}>
